@@ -1,0 +1,46 @@
+h1 {
+    font-size: 60px;
+    font-family: Georgia;
+    color: rgb(77, 184, 175);
+}
+
+img {
+    width: 60%;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color:  rgb(219, 142, 27);
+    font-weight: bold;
+}
+
+.header {
+    color: rgb(63, 122, 80);
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.topic {
+    background-color: rgb(28, 124, 141);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px auto;
+    padding: 8px 20px;
+}
+
+.button-section {
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(219, 142, 27);
+    color: white;
+    padding: 8px;
+    margin: 10px auto 20px auto;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
