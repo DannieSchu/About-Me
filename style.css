@@ -34,7 +34,7 @@ h3 {
     text-align: center;
 }
 
-.button {
+button {
     background-color: rgb(219, 142, 27);
     color: white;
     padding: 8px;
@@ -44,3 +44,8 @@ h3 {
     font-size: 12px;
 }
 
+footer {
+    background-color: rgb(28, 124, 141);
+    color: white;
+    text-align: center;
+}
