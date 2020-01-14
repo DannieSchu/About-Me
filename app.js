@@ -6,6 +6,9 @@ const button = document.getElementById('quiz-button');
 // Get empty results section and store as variable
 const results = document.getElementById('results')
 
+// Get outcome section and store as variable
+const outcome = document.getElementById('outcome');
+
 button.addEventListener('click', () => {
     // Log out that button works
     console.log('The button works');
@@ -39,8 +42,11 @@ button.addEventListener('click', () => {
 
     // Set empty total section test to string taking in name and count
     if (count > 2) {
-        results.textContent = `${name}, you answered ${count} questions correctly. You must be a knitter!`;
+        results.textContent = `${name}, you answered ${count} questions correctly out of 3. You'll make a great knitter! Read the sections below to discover the joys that await.`;
+        outcome.style.backgroundColor = 'rgb(77, 184, 175)';
     } else { 
-        results.textContent = `It's great that you are exploring new hobbies, ${name}! Have you considered sports?`
+        results.textContent = `It's great that you are exploring new hobbies, ${name}! You answered ${count} questions correctly out of 3. Have you considered sports?`
     }
+    button.style.display = 'none';
+    outcome.style.display = 'block';
 })
