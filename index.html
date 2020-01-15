@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>What's behind these doors?</h1>
+        <img id="elevator-image" src="https://media.istockphoto.com/photos/elevator-picture-id180821428?k=6&m=180821428&s=612x612&w=0&h=SLXASBb52_ekAmTp4qz5i2_VYehC4X2qA9DsuySCe7A=">
+    </header>
+    <section>
+        <p>You are in the US Bancorp Tower (i.e., the "Big Pink") for a tech MeetUp. How many people are currently standing in this elevator?<br>Hint: More than 0 and fewer than 20.</p>
+        
+    </section>
+    <section>
+        <label for="input-number">Pick a number: </label><input type="number" id="input-number" required>
+        <label>
+            <button id="submit-button">Guess!</button>
+        </label>
+        <p>You have <span id="attempts-remaining"> guesses remaining.</span>
+        <p>Your guess was <span id="high-low">!</span></p>
+        <div id="result"></div>
+    </section>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
