@@ -14,18 +14,21 @@
         <h1>What's behind these doors?</h1>
         <img id="elevator-image" src="https://media.istockphoto.com/photos/elevator-picture-id180821428?k=6&m=180821428&s=612x612&w=0&h=SLXASBb52_ekAmTp4qz5i2_VYehC4X2qA9DsuySCe7A=">
     </header>
-    <section>
-        <p>You are in the US Bancorp Tower (i.e., the "Big Pink") for a tech MeetUp. How many people are currently standing in this elevator?<br>Hint: More than 0 and fewer than 20.</p>
-        
-    </section>
-    <section>
-        <label for="input-number">Pick a number: <input type="number" id="input-number" required><label>
-            <button id="submit-button">Guess!</button>
-        </label>
-        <p>You have <span id="attempts-remaining">4</span> guesses remaining.</p>
-        <p>Your guess was <span id="high-low"></span>!</p>
-        <p id="result"></p>
-    </section>
+    <main>
+        <div class="box">
+            <section class="pre-result" id=pre-result>
+                <h2>Instructions</h2>
+                <p>You are in the US Bancorp Tower (i.e., the "Big Pink") for a tech MeetUp. How many people are currently standing in this elevator?<br><br><em>Hint: More than 0 and fewer than 20.</em></p>
+                <div class="user-interaction">
+                    <label for="input-number"><input type="number" id="input-number" required>
+                    <button id="submit-button">Guess!</button>
+                    <p id="attempts">You have <span id="attempts-remaining">4</span> guesses left.</p>
+                    <div id="high-low"></div>
+                </div>
+            </section>
+            <p id="result" class="result"></p>
+        </div>
+    </main>
     <script type="module" src="app.js"></script>
 </body>
 

@@ -27,24 +27,24 @@ submitButton.addEventListener('click', () => {
 
     if (compareNumbers(guess, correctNumber) === 1) {
         // Return "too high" if guess > correct number
-        highLow.textContent = 'too high';
+        highLow.textContent = `Guess again! ${guess} is too high.`;
         // Reduce count by 1
         count--;
     } else if (compareNumbers(guess, correctNumber) === -1) { 
         // Return "too low" if guess < correct number
-        highLow.textContent = 'too low';
+        highLow.textContent = `Guess again! ${guess} is too low.`;
         // Reduce count by 1
         count--;
     } else if (compareNumbers(guess, correctNumber) === 0) {
         // Return "correct" and tell user they won if guess = correct number
-        highLow.textContent = 'correct';
-        result.textContent = 'You won!';
-        return;
+        result.textContent = `${guess} is correct! You must have x-ray vision.`;
+        submitButton.disabled = true;
+        result.textContent = `Congratulations!`;
     }
-
-    if (count === 0 && compareNumbers(guess, correctNumber) !== 0) { 
-        result.textContent = 'You lost.';
-        return;
+    // Return losing message and disable button if run out of tries
+    if (count === 0 && guess !== correctNumber) { 
+        result.textContent = `You lost. Try again later.`;
+        submitButton.disabled = true;
     }
 }
 );
