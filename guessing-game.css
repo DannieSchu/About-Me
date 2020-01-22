@@ -1,0 +1,37 @@
+.link {
+    color: white;
+}
+
+header {
+    color: rgb(214, 155, 165);
+    font-family: 'Gill Sans';
+    font-size: 25px;
+    text-align: center;    
+}
+
+body {
+    background-color: rgb(119, 54, 65);
+}
+
+img {
+    border: 5px solid rgb(36, 36, 36);
+    width: 30%;
+}
+
+.box {    
+    font-family: Trebuchet MS;
+    background-color: rgba(214, 155, 165, 0.5);
+    /* opacity: 0.5; */
+    color: rgb(255, 255, 255);
+    padding: 10px 20px 20px 20px;
+    margin: 40px;
+}
+
+.user-interaction {
+    margin: 30px;
+    text-align: center;
+}
+
+.result {
+    display: none;
+}
